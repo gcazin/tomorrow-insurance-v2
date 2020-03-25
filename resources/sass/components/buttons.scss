@@ -1,0 +1,85 @@
+/**
+* Buttons
+*
+ */
+
+.btn {
+    // shadow
+    @apply font-bold rounded-full border border-transparent border-solid inline-block;
+    font-size: 13px;
+    padding: 10px 16px;
+}
+.btn-blue {
+    @apply bg-blue-400 text-white;
+    &:hover {
+        @apply bg-blue-600;
+    }
+}
+
+.btn-red {
+    @apply bg-red-500 text-white;
+    &:hover {
+        @apply bg-red-700;
+    }
+}
+.btn-green {
+    @apply bg-green-500 text-white;
+    &:hover {
+        @apply bg-green-700;
+    }
+}
+.btn-light {
+    @apply shadow border border-solid border-gray-300;
+    &:hover {
+        @apply shadow bg-gray-100;
+    }
+}
+
+/**
+* Outline buttons
+ */
+*[class*='btn-outline'] {
+    @apply bg-transparent border shadow-none;
+    &:hover {
+        @apply text-white;
+    }
+}
+.btn-outline-blue {
+    @apply border-blue-500 text-blue-500 ;
+    &:hover {
+        @apply bg-blue-500;
+    }
+}
+.btn-outline-red {
+    @apply border-red-500 text-red-500;
+    &:hover {
+        @apply bg-red-500;
+    }
+}
+.btn-outline-green {
+    @apply border-green-500 text-green-500;
+    &:hover {
+        @apply bg-green-500;
+    }
+}
+
+
+.btn-initial {
+    font-size: 14px;
+    padding: 8px 10px;
+}
+.btn-sm {
+    font-size: 12px;
+    padding: 6px 8px;
+}
+.btn-xl {
+    font-size: 16px;
+    padding: 12px 16px;
+}
+.btn-2xl {
+    font-size: 30px;
+    padding: 15px 30px;
+}
+.btn-block {
+    @apply block w-full;
+}

@@ -1,0 +1,17 @@
+/**
+* Input
+*
+ */
+
+label {
+    @apply text-gray-600;
+}
+.input, textarea {
+    @apply border border-gray-300 rounded py-2 px-4 my-2 block w-full appearance-none leading-normal text-gray-700;
+}
+.input:focus, .textarea:focus {
+    @apply border-blue-500;
+}
+.custom-label input:checked + svg {
+    display: block !important;
+}
